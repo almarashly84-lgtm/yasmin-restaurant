@@ -494,3 +494,5 @@ button.opt:hover { border-color: var(--cypress); }
 .lightbox figcaption { text-align: center; }
 .zoom-hint { opacity: .6; }
 @media (max-width: 600px) { .strip img { height: 220px; } .hero { padding-bottom: 20px; } }
+
+.demo-note { margin: 0; background: var(--brass); color: var(--night); text-align: center; font-size: 13px; font-weight: 600; padding: 6px var(--pad); }

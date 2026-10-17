@@ -243,6 +243,7 @@ function sanitizeSite(input) {
     logo: imgPath(input.logo),
     tagline: i18n(input.tagline, 120),
     seoDesc: i18n(input.seoDesc, 160),
+    demoNote: i18n(input.demoNote, 200),
     about: i18n(input.about, 1200),
     highlights: (Array.isArray(input.highlights) ? input.highlights : []).slice(0, 6).map((h) => i18n(h, 50)).filter(hasText),
     phone: str(input.phone, 30).replace(/[^\d+ ()/-]/g, ""),

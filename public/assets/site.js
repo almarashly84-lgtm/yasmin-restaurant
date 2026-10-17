@@ -212,6 +212,7 @@
     $$(".js-name-ar").forEach((el) => { el.textContent = site.nameAr; el.hidden = !site.nameAr; });
     if (site.logo) $$(".js-logo").forEach((el) => (el.src = site.logo));
     $("#tagline").textContent = tx(site.tagline);
+    $("#demoNote").textContent = tx(site.demoNote); $("#demoNote").hidden = !tx(site.demoNote);
     $("#about").textContent = tx(site.about);
     $("#highlights").replaceChildren(...(site.highlights || []).map((x) => h("li", { text: tx(x) })));
     $(".back-city").textContent = { ar: "دمشق – فيينا", de: "Damaskus – Wien", en: "Damascus – Vienna" }[lang];

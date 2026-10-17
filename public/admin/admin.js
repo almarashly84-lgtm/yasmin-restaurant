@@ -436,6 +436,7 @@
             h("button", { type: "button", class: "btn sm danger", text: "حذف", onclick: () => { site.highlights.splice(i, 1); markDirty(); render(); } }))),
           h("button", { type: "button", class: "btn sm", text: "+ ميزة", disabled: site.highlights.length >= 6, onclick: () => { site.highlights.push({}); markDirty(); render(); } })),
         tri("وصف المطعم في نتائج Google (اختياري، حتى 155 حرفًا)", site, "seoDesc", { max: 160 }),
+        tri("شريط «موقع تجريبي» أعلى الموقع (احذف النص عند التسليم للزبون)", site, "demoNote", { max: 200 }),
         select("لغة الموقع الافتراضية", site, "defaultLang", [["de", "Deutsch"], ["ar", "العربية"], ["en", "English"]])),
       card("التواصل والعنوان", null,
         h("div", { class: "grid2" },
