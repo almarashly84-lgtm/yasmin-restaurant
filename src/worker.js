@@ -42,39 +42,39 @@ export default {
       const p = url.pathname;
 
       if (p === "/api/site" && req.method === "GET") return json(publicSite(await loadSite(env)), 200, { "Cache-Control": "public, max-age=20" });
-      if (p === "/api/reviews" && req.method === "GET") return publicReviews(env);
-      if (p === "/api/reviews" && req.method === "POST") return submitReview(req, env, url);
-      if (p === "/api/track" && req.method === "POST") return track(req, env);
-      if (p.startsWith("/img/") && req.method === "GET") return image(p.slice(5), env);
-      if (p === "/r") return reviewRedirect(env);
-      if (p === "/sitemap.xml") return sitemap(url);
-      if (p === "/" || p === "/index.html") return homePage(req, env, url);
+      if (p === "/api/reviews" && req.method === "GET") return await publicReviews(env);
+      if (p === "/api/reviews" && req.method === "POST") return await submitReview(req, env, url);
+      if (p === "/api/track" && req.method === "POST") return await track(req, env);
+      if (p.startsWith("/img/") && req.method === "GET") return await image(p.slice(5), env);
+      if (p === "/r") return await reviewRedirect(env);
+      if (p === "/sitemap.xml") return await sitemap(url);
+      if (p === "/" || p === "/index.html") return await homePage(req, env, url);
 
       if (p.startsWith("/api/admin/")) {
         const route = p.slice("/api/admin/".length);
         if (req.method !== "GET" && !sameOrigin(req, url)) return json({ error: "bad_origin" }, 403);
-        if (route === "login" && req.method === "POST") return login(req, env);
+        if (route === "login" && req.method === "POST") return await login(req, env);
 
         const session = await getSession(req, env);
         if (!session) return json({ error: "unauthorized" }, 401);
 
-        if (route === "me" && req.method === "GET") return me(env);
-        if (route === "logout" && req.method === "POST") return logout(req, env);
-        if (route === "password" && req.method === "POST") return changePassword(req, env);
+        if (route === "me" && req.method === "GET") return await me(env);
+        if (route === "logout" && req.method === "POST") return await logout(req, env);
+        if (route === "password" && req.method === "POST") return await changePassword(req, env);
         if (route === "site" && req.method === "GET") return json(await loadSite(env), 200, { "Cache-Control": "no-store" });
-        if (route === "site" && req.method === "PUT") return saveSite(req, env, ctx);
-        if (route === "upload" && req.method === "POST") return upload(req, env);
-        if (route === "reviews" && req.method === "GET") return adminReviews(url, env);
+        if (route === "site" && req.method === "PUT") return await saveSite(req, env, ctx);
+        if (route === "upload" && req.method === "POST") return await upload(req, env);
+        if (route === "reviews" && req.method === "GET") return await adminReviews(url, env);
         const rm = route.match(/^reviews\/(\d+)$/);
-        if (rm && req.method === "PATCH") return updateReview(req, env, Number(rm[1]));
-        if (rm && req.method === "DELETE") return deleteReview(env, Number(rm[1]));
-        if (route === "report" && req.method === "GET") return report(url, env);
-        if (route === "report.csv" && req.method === "GET") return reportCsv(url, env);
-        if (route === "stats" && req.method === "DELETE") return clearStats(url, env);
+        if (rm && req.method === "PATCH") return await updateReview(req, env, Number(rm[1]));
+        if (rm && req.method === "DELETE") return await deleteReview(env, Number(rm[1]));
+        if (route === "report" && req.method === "GET") return await report(url, env);
+        if (route === "report.csv" && req.method === "GET") return await reportCsv(url, env);
+        if (route === "stats" && req.method === "DELETE") return await clearStats(url, env);
         return json({ error: "not_found" }, 404);
       }
       if (p.startsWith("/api/")) return json({ error: "not_found" }, 404);
-      return env.ASSETS.fetch(req);
+      return await env.ASSETS.fetch(req);
     } catch (err) {
       if (err instanceof HttpError) return json({ error: err.code }, err.status);
       console.error(err && err.stack || err);
