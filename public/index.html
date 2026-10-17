@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="de-AT" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yasmin – Damaszener Küche im Herzen Wiens</title>
+<meta name="description" content="Syrisches Restaurant in Wien: Mezze, Grill, Golfküche, frisches Gebäck und Catering. Tisch über WhatsApp reservieren.">
+<meta name="theme-color" content="#12302B">
+<link rel="canonical" href="/">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Yasmin">
+<meta property="og:description" content="">
+<meta property="og:url" content="/">
+<meta property="og:image" content="/assets/og.png">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/icon-180.png">
+<link rel="preload" href="/fonts/ibm-plex-sans-arabic-arabic-400-normal.woff2?v=1" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/fonts/fonts.css?v=1">
+<link rel="stylesheet" href="/assets/site.css?v=1">
+<script type="application/ld+json">{}</script>
+<script src="/assets/site.js?v=1" defer></script>
+</head>
+<body>
+<a class="skip" href="#menu" data-t="skip">Zur Speisekarte</a>
+
+<header class="bar" id="bar">
+  <a class="bar-brand" href="#top" aria-label="Yasmin">
+    <img class="js-logo" src="/logo.svg" alt="" width="40" height="40">
+    <span class="bar-name"><span class="js-name-ar" lang="ar">ياسمين</span><span class="js-name">Yasmin</span></span>
+  </a>
+  <nav class="bar-nav" aria-label="Navigation" data-t-aria="nav">
+    <a href="#menu" data-t="nav_menu">Speisekarte</a>
+    <a href="#story" data-t="nav_story">Über uns</a>
+    <a href="#gallery" data-t="nav_gallery">Galerie</a>
+    <a href="#reviews" data-t="nav_reviews">Bewertungen</a>
+    <a href="#visit" data-t="nav_visit">Anfahrt</a>
+  </nav>
+  <div class="lang" role="group" aria-label="Sprache" data-t-aria="language">
+    <button type="button" data-lang="ar" lang="ar">ع</button>
+    <button type="button" data-lang="de" lang="de">DE</button>
+    <button type="button" data-lang="en" lang="en">EN</button>
+  </div>
+  <a class="btn gold bar-book" href="#book" data-t="book_table">Tisch reservieren</a>
+</header>
+
+<main>
+  <!-- Hero: the 3D emblem with the kitchens orbiting around it -->
+  <section class="hero" id="top">
+    <div class="hero-arch" aria-hidden="true"></div>
+    <div class="stage" id="stage">
+      <svg class="ring" viewBox="0 0 100 100" aria-hidden="true"><ellipse cx="50" cy="50" rx="44" ry="44"/></svg>
+      <div class="tilt" id="tilt">
+        <div class="coin" id="coin" aria-hidden="true">
+          <div class="face front"><img class="js-logo" src="/logo.svg" alt="" width="400" height="400"></div>
+          <div class="face back"><span class="back-ar" lang="ar">ياسمين</span><span class="back-la">Yasmin</span><span class="back-city">Damaskus – Wien</span></div>
+        </div>
+      </div>
+      <ul class="orbit" id="orbit" aria-label="Unsere Küchen" data-t-aria="kitchens"></ul>
+    </div>
+    <div class="hero-copy">
+      <h1 class="brand"><span class="brand-ar js-name-ar" lang="ar">ياسمين</span><span class="brand-la js-name">Yasmin</span></h1>
+      <p class="tagline" id="tagline"></p>
+      <p class="hint" data-t="orbit_hint">Tippen Sie auf eine Küche, um ihre Karte zu sehen.</p>
+      <div class="hero-cta">
+        <a class="btn gold" href="#book" data-t="book_table">Tisch reservieren</a>
+        <span class="open-state" id="openState" role="status"></span>
+      </div>
+    </div>
+  </section>
+  <div class="ablaq" aria-hidden="true"></div>
+
+  <section class="sec kitchens" id="menu" aria-labelledby="menuTitle">
+    <div class="sec-head">
+      <h2 id="menuTitle" data-t="menu_title">Unsere Küchen</h2>
+      <p data-t="menu_sub">Alle unsere Küchen unter einem Dach. Wählen Sie eine aus, um die ganze Karte zu sehen.</p>
+    </div>
+    <ul class="k-list" id="kitchenList"></ul>
+  </section>
+
+  <section class="sec story" id="story" aria-labelledby="storyTitle">
+    <figure class="story-art"><img src="/art/courtyard.svg" alt="" width="600" height="400" loading="lazy" decoding="async"></figure>
+    <div class="story-text">
+      <h2 id="storyTitle" data-t="story_title">Vom Innenhof in Damaskus nach Wien</h2>
+      <p id="about"></p>
+      <ul class="highlights" id="highlights"></ul>
+    </div>
+  </section>
+
+  <section class="sec gallery" id="gallery" aria-labelledby="galTitle">
+    <div class="sec-head">
+      <h2 id="galTitle" data-t="gallery_title">Galerie</h2>
+      <div class="chips" id="galFilter" role="group" aria-label="Filter">
+        <button type="button" data-tag="all" aria-pressed="true" data-t="g_all">Alle</button>
+        <button type="button" data-tag="food" aria-pressed="false" data-t="g_food">Speisen</button>
+        <button type="button" data-tag="place" aria-pressed="false" data-t="g_place">Restaurant</button>
+        <button type="button" data-tag="events" aria-pressed="false" data-t="g_events">Feiern</button>
+      </div>
+    </div>
+    <div class="strip-wrap">
+      <button type="button" class="strip-nav prev" id="galPrev" aria-label="Zurück" data-t-aria="prev"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <ul class="strip" id="strip" tabindex="0" aria-label="Galerie" data-t-aria="gallery_title"></ul>
+      <button type="button" class="strip-nav next" id="galNext" aria-label="Weiter" data-t-aria="next"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+  </section>
+
+  <section class="sec reviews" id="reviews" aria-labelledby="revTitle">
+    <div class="sec-head">
+      <h2 id="revTitle" data-t="reviews_title">Was unsere Gäste sagen</h2>
+      <div class="rev-summary" id="revSummary"></div>
+    </div>
+    <ul class="rev-list" id="revList"></ul>
+    <p class="rev-empty" id="revEmpty" hidden data-t="reviews_empty">Noch keine Bewertungen. Schreiben Sie die erste.</p>
+    <div class="rev-actions">
+      <button type="button" class="btn line" id="openReview" data-t="write_review">Bewertung schreiben</button>
+      <a class="btn line" id="googleReview" href="/r" target="_blank" rel="noopener" data-t="google_review">Auf Google bewerten</a>
+    </div>
+  </section>
+
+  <section class="sec visit" id="visit" aria-labelledby="visitTitle">
+    <div class="book" id="book">
+      <h2 id="visitTitle" data-t="book_title">Tisch reservieren</h2>
+      <p class="muted" data-t="book_sub">Füllen Sie das Formular aus. WhatsApp öffnet sich mit Ihrer Anfrage, Sie müssen sie nur noch senden.</p>
+      <form id="bookForm" class="form" novalidate>
+        <div class="row2">
+          <label><span data-t="f_name">Name</span><input type="text" name="name" autocomplete="name" required maxlength="40"></label>
+          <label><span data-t="f_guests">Personen</span><select name="guests" required></select></label>
+        </div>
+        <div class="row2">
+          <label><span data-t="f_date">Datum</span><input name="date" type="date" required></label>
+          <label><span data-t="f_time">Uhrzeit</span><select name="time" required></select></label>
+        </div>
+        <label><span data-t="f_occasion">Anlass</span><select name="occasion"></select></label>
+        <label><span data-t="f_notes">Wünsche (optional)</span><textarea name="notes" rows="2" maxlength="300"></textarea></label>
+        <p class="err" id="bookErr" role="alert" hidden></p>
+        <button class="btn gold wide" type="submit"><svg class="wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.6-.1 1.2z"/></svg><span data-t="book_send">Per WhatsApp anfragen</span></button>
+        <p class="small muted" id="bookNote"></p>
+      </form>
+    </div>
+    <div class="info">
+      <h3 data-t="hours_title">Öffnungszeiten</h3>
+      <table class="hours" id="hours"><tbody></tbody></table>
+      <h3 data-t="find_us" id="findUs">So finden Sie uns</h3>
+      <address id="address"></address>
+      <div class="contact" id="contact"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot-brand">
+    <img class="js-logo" src="/logo.svg" alt="" width="56" height="56" loading="lazy">
+    <p><span class="js-name-ar" lang="ar">ياسمين</span> <span class="js-name">Yasmin</span></p>
+  </div>
+  <ul class="social" id="social"></ul>
+  <nav class="legal" aria-label="Rechtliches" data-t-aria="legal">
+    <a href="/impressum.html" data-t="impressum">Impressum</a>
+    <a href="/datenschutz.html" data-t="privacy">Datenschutz</a>
+  </nav>
+  <p class="credit small">Website: <a href="https://www.alaadigital.at" rel="noopener">Alaa Eddin Digital Media</a></p>
+</footer>
+
+<!-- Kitchen menu -->
+<dialog class="sheet" id="menuSheet" aria-labelledby="sheetTitle">
+  <div class="sheet-inner">
+    <div class="sheet-head">
+      <img id="sheetImg" src="/art/hummus.svg" alt="" width="72" height="72">
+      <div><h2 id="sheetTitle">Speisekarte</h2><p id="sheetDesc" class="muted"></p></div>
+      <button type="button" class="x" data-close aria-label="Schließen" data-t-aria="close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <nav class="tabs" id="sheetTabs" aria-label="Kategorien" data-t-aria="categories"></nav>
+    <div class="sheet-body" id="sheetBody"></div>
+    <div class="sheet-foot" id="sheetFoot"></div>
+  </div>
+</dialog>
+
+<!-- Catering request -->
+<dialog class="sheet small-sheet" id="cateringSheet" aria-labelledby="catTitle">
+  <div class="sheet-inner">
+    <div class="sheet-head">
+      <div><h2 id="catTitle" data-t="cat_title">Catering anfragen</h2><p class="muted" data-t="cat_sub">Wir melden uns mit einem Angebot auf WhatsApp.</p></div>
+      <button type="button" class="x" data-close aria-label="Schließen" data-t-aria="close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <form id="catForm" class="form sheet-body" novalidate>
+      <label><span data-t="f_name">Name</span><input type="text" name="name" autocomplete="name" required maxlength="40"></label>
+      <div class="row2">
+        <label><span data-t="f_date">Datum</span><input name="date" type="date" required></label>
+        <label><span data-t="f_guests">Personen</span><input name="guests" type="number" inputmode="numeric" required></label>
+      </div>
+      <label><span data-t="f_event">Art der Feier</span><input type="text" name="event" maxlength="60"></label>
+      <label><span data-t="f_package">Paket</span><select name="package"></select></label>
+      <label><span data-t="f_notes">Wünsche (optional)</span><textarea name="notes" rows="2" maxlength="300"></textarea></label>
+      <p class="err" id="catErr" role="alert" hidden></p>
+      <button class="btn gold wide" type="submit" data-t="book_send">Per WhatsApp anfragen</button>
+    </form>
+  </div>
+</dialog>
+
+<!-- Order basket (only when ordering is switched on in the dashboard) -->
+<dialog class="sheet small-sheet" id="cartSheet" aria-labelledby="cartTitle">
+  <div class="sheet-inner">
+    <div class="sheet-head">
+      <div><h2 id="cartTitle" data-t="cart_title">Ihre Bestellung</h2><p class="muted" data-t="cart_sub">Zum Abholen. WhatsApp öffnet sich mit Ihrer Bestellung.</p></div>
+      <button type="button" class="x" data-close aria-label="Schließen" data-t-aria="close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="sheet-body">
+      <ul class="cart-lines" id="cartLines"></ul>
+      <form id="cartForm" class="form" novalidate>
+        <div class="row2">
+          <label><span data-t="f_name">Name</span><input type="text" name="name" autocomplete="name" required maxlength="40"></label>
+          <label><span data-t="f_pickup">Abholung</span><select name="pickup"></select></label>
+        </div>
+        <label><span data-t="f_notes">Wünsche (optional)</span><textarea name="notes" rows="2" maxlength="300"></textarea></label>
+        <p class="err" id="cartErr" role="alert" hidden></p>
+        <button class="btn gold wide" type="submit"><span data-t="order_send">Bestellung senden</span> <b id="cartTotal"></b></button>
+      </form>
+    </div>
+  </div>
+</dialog>
+<button type="button" class="cart-fab" id="cartFab" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1 13H7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><span id="cartCount">0</span><span class="sr" data-t="cart_title">Ihre Bestellung</span></button>
+
+<!-- Write a review -->
+<dialog class="sheet small-sheet" id="reviewSheet" aria-labelledby="rvTitle">
+  <div class="sheet-inner">
+    <div class="sheet-head">
+      <div><h2 id="rvTitle" data-t="write_review">Bewertung schreiben</h2><p class="muted" data-t="review_sub">Ihre Bewertung erscheint, nachdem wir sie geprüft haben.</p></div>
+      <button type="button" class="x" data-close aria-label="Schließen" data-t-aria="close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <form id="reviewForm" class="form sheet-body" novalidate>
+      <fieldset class="stars-in">
+        <legend data-t="f_rating">Ihre Bewertung</legend>
+        <div class="stars-row">
+          <input type="radio" name="rating" value="5" id="r5"><label for="r5" title="5"><span class="sr">5</span></label>
+          <input type="radio" name="rating" value="4" id="r4"><label for="r4" title="4"><span class="sr">4</span></label>
+          <input type="radio" name="rating" value="3" id="r3"><label for="r3" title="3"><span class="sr">3</span></label>
+          <input type="radio" name="rating" value="2" id="r2"><label for="r2" title="2"><span class="sr">2</span></label>
+          <input type="radio" name="rating" value="1" id="r1"><label for="r1" title="1"><span class="sr">1</span></label>
+        </div>
+      </fieldset>
+      <label><span data-t="f_first_name">Vorname</span><input type="text" name="name" autocomplete="given-name" required maxlength="40"></label>
+      <label><span data-t="f_review">Ihre Erfahrung</span><textarea name="text" rows="4" required maxlength="600"></textarea></label>
+      <label class="hp" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+      <label class="check"><input type="checkbox" name="consent" required><span data-t="review_consent">Ich bin einverstanden, dass mein Vorname und meine Bewertung auf dieser Website veröffentlicht werden.</span></label>
+      <p class="err" id="rvErr" role="alert" hidden></p>
+      <button class="btn gold wide" type="submit" data-t="review_send">Bewertung senden</button>
+    </form>
+  </div>
+</dialog>
+
+<!-- Gallery viewer -->
+<dialog class="lightbox" id="lightbox" aria-label="Galerie" data-t-aria="gallery_title">
+  <button type="button" class="x" data-close aria-label="Schließen" data-t-aria="close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button type="button" class="lb-nav prev" id="lbPrev" aria-label="Zurück" data-t-aria="prev"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <figure><img id="lbImg" src="/art/courtyard.svg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button type="button" class="lb-nav next" id="lbNext" aria-label="Weiter" data-t-aria="next"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,215 @@
+{
+  "name": "Yasmin",
+  "nameAr": "ياسمين",
+  "logo": "",
+  "tagline": {
+    "ar": "مطعم شامي في قلب فيينا",
+    "de": "Damaszener Küche im Herzen Wiens",
+    "en": "Damascene cuisine in the heart of Vienna"
+  },
+  "about": {
+    "ar": "في دمشق، تتسلّق شجرة الياسمين جدران البيوت القديمة، ويجتمع الأهل حول بحرة الماء في صحن الدار. من هذا البيت أتينا بوصفاتنا إلى فيينا: مازة شامية تُحضَّر كل صباح، ومشاوي على الفحم، وأطباق خليجية للعائلات، ومعجنات طازجة من الفرن.",
+    "de": "In Damaskus rankt Jasmin an den Mauern der alten Häuser, und die Familie trifft sich am Brunnen im Innenhof. Aus diesem Haus haben wir unsere Rezepte nach Wien mitgebracht: Mezze, jeden Morgen frisch zubereitet, Gegrilltes vom Holzkohlegrill, Gerichte aus der Golfküche für die ganze Familie und frisches Gebäck aus dem Ofen.",
+    "en": "In Damascus, jasmine climbs the walls of the old houses, and families gather around the fountain in the courtyard. From that house we brought our recipes to Vienna: mezze made fresh every morning, charcoal grills, Gulf dishes for the whole family and fresh pastries from the oven."
+  },
+  "highlights": [
+    { "ar": "مازة طازجة كل يوم", "de": "Täglich frische Mezze", "en": "Fresh mezze every day" },
+    { "ar": "لحم حلال", "de": "Halal-Fleisch", "en": "Halal meat" },
+    { "ar": "أطباق نباتية", "de": "Vegetarische Gerichte", "en": "Vegetarian dishes" }
+  ],
+  "phone": "",
+  "whatsapp": "",
+  "email": "",
+  "address": "",
+  "mapsQuery": "",
+  "google": { "reviewUrl": "", "rating": null, "count": null },
+  "social": { "instagram": "", "facebook": "", "tiktok": "", "youtube": "" },
+  "hours": [
+    { "days": [1, 2, 3, 4], "open": "11:00", "close": "22:00" },
+    { "days": [5, 6], "open": "11:00", "close": "23:30" },
+    { "days": [0], "open": "12:00", "close": "22:00" }
+  ],
+  "defaultLang": "de",
+  "currency": "€",
+  "booking": {
+    "enabled": true,
+    "maxGuests": 20,
+    "slotMinutes": 30,
+    "lastSlotBeforeClose": 60,
+    "daysAhead": 60,
+    "note": {
+      "ar": "الحجز يُثبَّت بعد ردّنا على رسالتك في واتساب.",
+      "de": "Die Reservierung gilt erst, wenn wir Ihnen auf WhatsApp antworten.",
+      "en": "Your booking is confirmed once we reply on WhatsApp."
+    },
+    "occasions": [
+      { "ar": "عشاء عادي", "de": "Abendessen", "en": "Dinner" },
+      { "ar": "عيد ميلاد", "de": "Geburtstag", "en": "Birthday" },
+      { "ar": "عشاء عمل", "de": "Geschäftsessen", "en": "Business dinner" },
+      { "ar": "مناسبة عائلية", "de": "Familienfeier", "en": "Family celebration" }
+    ]
+  },
+  "ordering": { "enabled": false, "pickupTimes": [0, 15, 30, 45] },
+  "messageLang": "ar",
+  "gallery": [
+    { "img": "art/courtyard.svg", "tag": "place", "alt": { "ar": "صحن دار دمشقي بالياسمين", "de": "Damaszener Innenhof mit Jasmin", "en": "Damascene courtyard with jasmine" } },
+    { "img": "art/hummus.svg", "tag": "food", "alt": { "ar": "حمص بالطحينة", "de": "Hummus mit Tahini", "en": "Hummus with tahini" } },
+    { "img": "art/kabsa.svg", "tag": "food", "alt": { "ar": "كبسة دجاج", "de": "Kabsa mit Huhn", "en": "Chicken kabsa" } },
+    { "img": "art/grill.svg", "tag": "food", "alt": { "ar": "مشاوي على الفحم", "de": "Vom Holzkohlegrill", "en": "Charcoal grill" } },
+    { "img": "art/vienna.svg", "tag": "place", "alt": { "ar": "من دمشق إلى فيينا", "de": "Von Damaskus nach Wien", "en": "From Damascus to Vienna" } },
+    { "img": "art/kunafa.svg", "tag": "food", "alt": { "ar": "كنافة بالفستق", "de": "Kunafa mit Pistazien", "en": "Kunafa with pistachios" } },
+    { "img": "art/catering.svg", "tag": "events", "alt": { "ar": "بوفيه للمناسبات", "de": "Buffet für Feiern", "en": "Event buffet" } },
+    { "img": "art/manakish.svg", "tag": "food", "alt": { "ar": "مناقيش زعتر", "de": "Manakish mit Zatar", "en": "Zaatar manakish" } }
+  ],
+  "legal": {
+    "company": "",
+    "owner": "",
+    "legalForm": "",
+    "address": "",
+    "phone": "",
+    "email": "",
+    "uid": "",
+    "registerNo": "",
+    "registerCourt": "",
+    "gisa": "",
+    "chamber": "Wirtschaftskammer Wien, Fachgruppe Gastronomie",
+    "authority": "",
+    "trade": "Gastgewerbe"
+  },
+  "kitchens": [
+    {
+      "id": "syrian",
+      "icon": "star",
+      "type": "menu",
+      "img": "art/hummus.svg",
+      "name": { "ar": "المطبخ السوري", "de": "Syrische Küche", "en": "Syrian kitchen" },
+      "short": { "ar": "سوري", "de": "Syrisch", "en": "Syrian" },
+      "desc": { "ar": "أطباق دمشق الأصيلة: مازة ومشاوي وحلويات بيتية.", "de": "Klassiker aus Damaskus: Mezze, Grill und hausgemachte Süßspeisen.", "en": "Damascus classics: mezze, grills and homemade sweets." },
+      "sections": [
+        {
+          "id": "mezze",
+          "name": { "ar": "مقبلات", "de": "Vorspeisen", "en": "Mezze" },
+          "items": [
+            { "id": "hummus", "name": { "ar": "حمص بالطحينة", "de": "Hummus", "en": "Hummus" }, "desc": { "ar": "حمص مهروس مع طحينة وليمون وزيت زيتون", "de": "Kichererbsenpüree mit Tahini, Zitrone und Olivenöl", "en": "Chickpea purée with tahini, lemon and olive oil" }, "price": 6.9, "img": "art/hummus.svg", "tags": ["veg"] },
+            { "id": "fattoush", "name": { "ar": "فتوش", "de": "Fattousch", "en": "Fattoush" }, "desc": { "ar": "سلطة خضار مع خبز محمّص ودبس الرمان", "de": "Gemüsesalat mit geröstetem Brot und Granatapfelsirup", "en": "Vegetable salad with toasted bread and pomegranate molasses" }, "price": 7.5, "img": "art/fattoush.svg", "tags": ["veg"] },
+            { "id": "falafel-plate", "name": { "ar": "صحن فلافل", "de": "Falafel-Teller", "en": "Falafel plate" }, "desc": { "ar": "ست أقراص فلافل مع طحينة", "de": "Sechs Falafel mit Tahini-Sauce", "en": "Six falafel with tahini sauce" }, "price": 7.9, "img": "art/falafel.svg", "tags": ["veg"] }
+          ]
+        },
+        {
+          "id": "grill",
+          "name": { "ar": "مشاوي", "de": "Vom Grill", "en": "Grill" },
+          "items": [
+            { "id": "mixed-grill", "name": { "ar": "مشاوي مشكّلة", "de": "Gemischter Grillteller", "en": "Mixed grill" }, "desc": { "ar": "كباب وشيش طاووق ولحم مع أرز وخضار مشوية", "de": "Kebab, Hühnerspieß und Lammfleisch mit Reis und Grillgemüse", "en": "Kebab, chicken skewer and lamb with rice and grilled vegetables" }, "price": 19.9, "img": "art/grill.svg", "badge": { "ar": "الأكثر طلبًا", "de": "Beliebt", "en": "Popular" } },
+            { "id": "shish-tawook", "name": { "ar": "شيش طاووق", "de": "Schisch Tawuk", "en": "Shish tawook" }, "desc": { "ar": "قطع دجاج متبّلة مع ثوم وبطاطا", "de": "Marinierte Hühnerwürfel mit Knoblauchcreme und Pommes", "en": "Marinated chicken with garlic sauce and fries" }, "price": 15.9, "img": "art/grill.svg" }
+          ]
+        },
+        {
+          "id": "sweets",
+          "name": { "ar": "حلويات", "de": "Süßspeisen", "en": "Sweets" },
+          "items": [
+            { "id": "kunafa", "name": { "ar": "كنافة بالجبنة", "de": "Kunafa mit Käse", "en": "Cheese kunafa" }, "desc": { "ar": "كنافة ساخنة بالقطر والفستق الحلبي", "de": "Warme Kunafa mit Zuckersirup und Pistazien", "en": "Warm kunafa with syrup and pistachios" }, "price": 6.9, "img": "art/kunafa.svg", "tags": ["veg"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gulf",
+      "icon": "dallah",
+      "type": "menu",
+      "img": "art/kabsa.svg",
+      "name": { "ar": "المطبخ الخليجي", "de": "Golfküche", "en": "Gulf kitchen" },
+      "short": { "ar": "خليجي", "de": "Golf", "en": "Gulf" },
+      "desc": { "ar": "كبسة ومندي للعائلات، مع القهوة العربية والتمر.", "de": "Kabsa und Mandi für die ganze Familie, dazu arabischer Kaffee mit Datteln.", "en": "Kabsa and mandi for the whole family, with Arabic coffee and dates." },
+      "sections": [
+        {
+          "id": "rice",
+          "name": { "ar": "أطباق الأرز", "de": "Reisgerichte", "en": "Rice dishes" },
+          "items": [
+            { "id": "kabsa", "name": { "ar": "كبسة دجاج", "de": "Kabsa mit Huhn", "en": "Chicken kabsa" }, "desc": { "ar": "أرز بالبهارات الخليجية مع نصف دجاجة ومكسرات", "de": "Gewürzreis mit einem halben Huhn und Nüssen", "en": "Spiced rice with half a chicken and nuts" }, "price": 15.9, "img": "art/kabsa.svg" },
+            { "id": "mandi", "name": { "ar": "مندي لحم", "de": "Mandi mit Lamm", "en": "Lamb mandi" }, "desc": { "ar": "لحم غنم مطهو ببطء على أرز مدخّن", "de": "Langsam gegartes Lammfleisch auf Rauchreis", "en": "Slow-cooked lamb on smoked rice" }, "options": [ { "id": "single", "name": { "ar": "لشخص", "de": "1 Person", "en": "1 person" }, "price": 19.9 }, { "id": "family", "name": { "ar": "عائلي (4 أشخاص)", "de": "Familie (4 Personen)", "en": "Family (4 people)" }, "price": 69 } ], "img": "art/kabsa.svg" }
+          ]
+        },
+        {
+          "id": "coffee",
+          "name": { "ar": "قهوة وتمر", "de": "Kaffee & Datteln", "en": "Coffee & dates" },
+          "items": [
+            { "id": "dallah", "name": { "ar": "دلّة قهوة عربية", "de": "Arabischer Kaffee (Kanne)", "en": "Arabic coffee pot" }, "desc": { "ar": "قهوة بالهيل مع تمر، تكفي 2–4 أشخاص", "de": "Kaffee mit Kardamom und Datteln, für 2–4 Personen", "en": "Cardamom coffee with dates, serves 2–4" }, "price": 9.9, "img": "art/dallah.svg", "tags": ["veg"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bakery",
+      "icon": "bread",
+      "type": "menu",
+      "img": "art/manakish.svg",
+      "name": { "ar": "المعجنات", "de": "Gebäck aus dem Ofen", "en": "Oven-baked pastries" },
+      "short": { "ar": "معجنات", "de": "Gebäck", "en": "Pastries" },
+      "desc": { "ar": "مناقيش وفطائر طازجة من الفرن طوال اليوم.", "de": "Manakish und Fatayer, den ganzen Tag frisch aus dem Ofen.", "en": "Manakish and fatayer, fresh from the oven all day." },
+      "sections": [
+        {
+          "id": "manakish",
+          "name": { "ar": "مناقيش", "de": "Manakish", "en": "Manakish" },
+          "items": [
+            { "id": "zaatar", "name": { "ar": "منقوشة زعتر", "de": "Manakish mit Zatar", "en": "Zaatar manakish" }, "desc": { "ar": "زعتر وسمسم وزيت زيتون", "de": "Zatar, Sesam und Olivenöl", "en": "Zaatar, sesame and olive oil" }, "price": 3.9, "img": "art/manakish.svg", "tags": ["veg"] },
+            { "id": "cheese", "name": { "ar": "منقوشة جبنة", "de": "Manakish mit Käse", "en": "Cheese manakish" }, "desc": { "ar": "جبنة عكاوي ذائبة", "de": "Geschmolzener Akkawi-Käse", "en": "Melted akkawi cheese" }, "price": 4.5, "img": "art/manakish.svg", "tags": ["veg"] }
+          ]
+        },
+        {
+          "id": "fatayer",
+          "name": { "ar": "فطائر", "de": "Fatayer", "en": "Fatayer" },
+          "items": [
+            { "id": "spinach", "name": { "ar": "فطيرة سبانخ", "de": "Fatayer mit Spinat", "en": "Spinach fatayer" }, "desc": { "ar": "سبانخ وبصل وسمّاق", "de": "Spinat, Zwiebel und Sumach", "en": "Spinach, onion and sumac" }, "price": 2.5, "img": "art/fatayer.svg", "tags": ["veg"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fast",
+      "icon": "wrap",
+      "type": "menu",
+      "img": "art/shawarma.svg",
+      "name": { "ar": "الوجبات السريعة", "de": "Streetfood", "en": "Fast food" },
+      "short": { "ar": "سريعة", "de": "Streetfood", "en": "Fast food" },
+      "desc": { "ar": "شاورما وفلافل وبرغر، سريعة وطازجة.", "de": "Shawarma, Falafel und Burger – schnell und frisch.", "en": "Shawarma, falafel and burgers, quick and fresh." },
+      "sections": [
+        {
+          "id": "shawarma",
+          "name": { "ar": "شاورما", "de": "Shawarma", "en": "Shawarma" },
+          "items": [
+            { "id": "shawarma-chicken", "name": { "ar": "شاورما دجاج", "de": "Shawarma mit Huhn", "en": "Chicken shawarma" }, "desc": { "ar": "خبز صاج، ثوم، مخلل وبطاطا", "de": "Im Saj-Brot mit Knoblauchcreme, Gurken und Pommes", "en": "In saj bread with garlic sauce, pickles and fries" }, "options": [ { "id": "sandwich", "name": { "ar": "سندويش", "de": "Sandwich", "en": "Sandwich" }, "price": 7.5 }, { "id": "arabi", "name": { "ar": "عربي (مقطّع)", "de": "Arabi (geschnitten)", "en": "Arabi (sliced)" }, "price": 10.9 } ], "img": "art/shawarma.svg", "badge": { "ar": "الأكثر طلبًا", "de": "Beliebt", "en": "Popular" } },
+            { "id": "falafel-wrap", "name": { "ar": "سندويش فلافل", "de": "Falafel-Wrap", "en": "Falafel wrap" }, "desc": { "ar": "فلافل وطحينة وخضار", "de": "Falafel, Tahini und Gemüse", "en": "Falafel, tahini and vegetables" }, "price": 5.9, "img": "art/falafel.svg", "tags": ["veg"] }
+          ]
+        },
+        {
+          "id": "burger",
+          "name": { "ar": "برغر", "de": "Burger", "en": "Burgers" },
+          "items": [
+            { "id": "beef-burger", "name": { "ar": "برغر لحم", "de": "Rindfleisch-Burger", "en": "Beef burger" }, "desc": { "ar": "لحم بقري مع جبنة وبطاطا", "de": "Rindfleisch mit Käse, dazu Pommes", "en": "Beef with cheese, served with fries" }, "price": 10.9, "img": "art/burger.svg" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "catering",
+      "icon": "cloche",
+      "type": "catering",
+      "img": "art/catering.svg",
+      "name": { "ar": "كترينج الحفلات والمناسبات", "de": "Catering für Feiern", "en": "Event catering" },
+      "short": { "ar": "كترينج", "de": "Catering", "en": "Catering" },
+      "desc": { "ar": "بوفيهات للأعراس وأعياد الميلاد ومناسبات الشركات، من 15 شخصًا.", "de": "Buffets für Hochzeiten, Geburtstage und Firmenfeiern ab 15 Personen.", "en": "Buffets for weddings, birthdays and company events, from 15 guests." },
+      "minGuests": 15,
+      "sections": [
+        {
+          "id": "packages",
+          "name": { "ar": "الباقات", "de": "Pakete", "en": "Packages" },
+          "items": [
+            { "id": "mezze-buffet", "name": { "ar": "بوفيه مازة شامية", "de": "Mezze-Buffet", "en": "Mezze buffet" }, "desc": { "ar": "ثمانية أنواع مقبلات مع خبز وسلطات", "de": "Acht Vorspeisen mit Brot und Salaten", "en": "Eight mezze with bread and salads" }, "price": 14, "unit": { "ar": "للشخص", "de": "pro Person", "en": "per person" }, "img": "art/hummus.svg" },
+            { "id": "full-buffet", "name": { "ar": "بوفيه شامي كامل", "de": "Damaszener Buffet", "en": "Full Damascene buffet" }, "desc": { "ar": "مقبلات، مشاوي، أرز وحلويات", "de": "Vorspeisen, Grill, Reis und Süßspeisen", "en": "Mezze, grill, rice and sweets" }, "price": 26, "unit": { "ar": "للشخص", "de": "pro Person", "en": "per person" }, "img": "art/catering.svg", "badge": { "ar": "الأشمل", "de": "Komplett", "en": "Complete" } },
+            { "id": "sweets-tray", "name": { "ar": "صينية حلويات", "de": "Süßspeisen-Tablett", "en": "Sweets tray" }, "desc": { "ar": "كنافة وحلويات شامية لـ 20 شخصًا", "de": "Kunafa und Damaszener Süßes für 20 Personen", "en": "Kunafa and Damascene sweets for 20 people" }, "price": 55, "img": "art/kunafa.svg" }
+          ]
+        }
+      ]
+    }
+  ]
+}
