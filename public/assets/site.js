@@ -22,7 +22,7 @@
     ar: {
       skip: "انتقل إلى قائمة الطعام", nav: "القائمة الرئيسية", nav_menu: "قائمة الطعام", nav_story: "قصتنا", nav_gallery: "الصور", nav_reviews: "آراء الضيوف", nav_visit: "زورونا",
       language: "اللغة", book_table: "احجز طاولة", kitchens: "مطابخنا", orbit_hint: "اضغط على أي مطبخ لتظهر قائمته.",
-      menu_title: "مطابخنا", menu_sub: "كل مطابخنا تحت سقف واحد. اختر مطبخًا لتظهر قائمته كاملة.", see_menu: "عرض القائمة", see_packages: "عرض الباقات",
+      menu_title: "مطابخنا", menu_sub: "اختر مطبخًا لتظهر قائمته.", zoom_hint: "اضغط مرتين للتكبير", see_menu: "عرض القائمة", see_packages: "عرض الباقات",
       story_title: "من صحن الدار في دمشق إلى فيينا", gallery_title: "الصور", g_all: "الكل", g_food: "الأطباق", g_place: "المطعم", g_events: "المناسبات",
       prev: "السابق", next: "التالي", close: "إغلاق", categories: "الأقسام", legal: "معلومات قانونية",
       reviews_title: "آراء ضيوفنا", reviews_empty: "لا توجد تقييمات بعد. كن أول من يكتب رأيه.", write_review: "اكتب تقييمك", google_review: "قيّمنا على Google",
@@ -30,10 +30,10 @@
       review_consent: "أوافق على نشر اسمي الأول وتقييمي على هذا الموقع.", review_send: "أرسل التقييم", review_thanks: "شكرًا لك! سيظهر تقييمك بعد مراجعته.",
       reviews_on_site: (n) => n === 1 ? "تقييم واحد على موقعنا" : n === 2 ? "تقييمان على موقعنا" : n <= 10 ? `${n} تقييمات على موقعنا` : `${n} تقييمًا على موقعنا`,
       on_google: (r, n) => `${r} على Google` + (n ? ` (${n} تقييم)` : ""), restaurant_reply: "ردّ المطعم:",
-      book_title: "احجز طاولتك", book_sub: "املأ النموذج، فيفتح واتساب برسالة جاهزة، وما عليك إلا الضغط على «إرسال».", book_send: "أرسل الطلب عبر واتساب",
+      book_title: "احجز طاولتك", book_sub: "اختر عدد الأشخاص واليوم والوقت، فيفتح واتساب برسالة جاهزة.", book_send: "أرسل الطلب عبر واتساب",
       f_name: "الاسم", f_guests: "عدد الأشخاص", f_date: "التاريخ", f_time: "الوقت", f_occasion: "المناسبة", f_notes: "ملاحظات (اختياري)",
       f_event: "نوع المناسبة", f_package: "الباقة", f_pickup: "وقت الاستلام", any_package: "لم أقرّر بعد",
-      hours_title: "أوقات الدوام", find_us: "عنواننا", call: "اتصال", whatsapp: "واتساب", route: "الطريق على الخريطة", email: "إيميل", copy_email: "نسخ الإيميل", copied: "تم النسخ",
+      hours_title: "أوقات الدوام", find_us: "عنواننا", call: "اتصال", whatsapp: "واتساب", route: "الخريطة", email: "إيميل", copy_email: "نسخ الإيميل", copied: "تم النسخ",
       open_until: (t) => `مفتوح الآن حتى ${t}`, closed_opens: (d, t) => `مغلق الآن، نفتح ${d} الساعة ${t}`, closed: "مغلق الآن", today: "اليوم", tomorrow: "غدًا",
       closed_day: "مغلق", no_slots: "لا توجد أوقات متاحة في هذا اليوم، اختر يومًا آخر.", guests_n: (n) => n === 1 ? "شخص واحد" : n === 2 ? "شخصان" : n <= 10 ? `${n} أشخاص` : `${n} شخصًا`,
       err_name: "اكتب اسمك من فضلك.", err_date: "اختر التاريخ.", err_time: "اختر الوقت.", err_guests: (n) => `أقل عدد للكترينج ${n} أشخاص.`, err_rating: "اختر عدد النجوم.",
@@ -48,7 +48,7 @@
     de: {
       skip: "Zur Speisekarte", nav: "Hauptnavigation", nav_menu: "Speisekarte", nav_story: "Über uns", nav_gallery: "Galerie", nav_reviews: "Bewertungen", nav_visit: "Anfahrt",
       language: "Sprache", book_table: "Tisch reservieren", kitchens: "Unsere Küchen", orbit_hint: "Tippen Sie auf eine Küche, um ihre Karte zu sehen.",
-      menu_title: "Unsere Küchen", menu_sub: "Alle unsere Küchen unter einem Dach. Wählen Sie eine aus, um die ganze Karte zu sehen.", see_menu: "Karte ansehen", see_packages: "Pakete ansehen",
+      menu_title: "Unsere Küchen", menu_sub: "Wählen Sie eine Küche, um ihre Karte zu sehen.", zoom_hint: "Doppelt tippen zum Zoomen", see_menu: "Karte ansehen", see_packages: "Pakete ansehen",
       story_title: "Vom Innenhof in Damaskus nach Wien", gallery_title: "Galerie", g_all: "Alle", g_food: "Speisen", g_place: "Restaurant", g_events: "Feiern",
       prev: "Zurück", next: "Weiter", close: "Schließen", categories: "Kategorien", legal: "Rechtliches",
       reviews_title: "Was unsere Gäste sagen", reviews_empty: "Noch keine Bewertungen. Schreiben Sie die erste.", write_review: "Bewertung schreiben", google_review: "Auf Google bewerten",
@@ -56,10 +56,10 @@
       review_consent: "Ich bin einverstanden, dass mein Vorname und meine Bewertung auf dieser Website veröffentlicht werden.", review_send: "Bewertung senden", review_thanks: "Danke! Ihre Bewertung erscheint nach der Prüfung.",
       reviews_on_site: (n) => n === 1 ? "1 Bewertung auf unserer Website" : `${n} Bewertungen auf unserer Website`,
       on_google: (r, n) => `${r} auf Google` + (n ? ` (${n} Bewertungen)` : ""), restaurant_reply: "Antwort des Restaurants:",
-      book_title: "Tisch reservieren", book_sub: "Füllen Sie das Formular aus. WhatsApp öffnet sich mit Ihrer Anfrage, Sie müssen sie nur noch senden.", book_send: "Per WhatsApp anfragen",
+      book_title: "Tisch reservieren", book_sub: "Wählen Sie Personen, Tag und Uhrzeit. WhatsApp öffnet sich mit Ihrer Anfrage.", book_send: "Per WhatsApp anfragen",
       f_name: "Name", f_guests: "Personen", f_date: "Datum", f_time: "Uhrzeit", f_occasion: "Anlass", f_notes: "Wünsche (optional)",
       f_event: "Art der Feier", f_package: "Paket", f_pickup: "Abholung", any_package: "Noch offen",
-      hours_title: "Öffnungszeiten", find_us: "So finden Sie uns", call: "Anrufen", whatsapp: "WhatsApp", route: "Route planen", email: "E-Mail", copy_email: "E-Mail kopieren", copied: "Kopiert",
+      hours_title: "Öffnungszeiten", find_us: "So finden Sie uns", call: "Anrufen", whatsapp: "WhatsApp", route: "Route", email: "E-Mail", copy_email: "E-Mail kopieren", copied: "Kopiert",
       open_until: (t) => `Jetzt geöffnet bis ${t} Uhr`, closed_opens: (d, t) => `Geschlossen – öffnet ${d} um ${t} Uhr`, closed: "Jetzt geschlossen", today: "heute", tomorrow: "morgen",
       closed_day: "Ruhetag", no_slots: "An diesem Tag gibt es keine freien Zeiten. Bitte wählen Sie einen anderen Tag.", guests_n: (n) => n === 1 ? "1 Person" : `${n} Personen`,
       err_name: "Bitte geben Sie Ihren Namen ein.", err_date: "Bitte wählen Sie ein Datum.", err_time: "Bitte wählen Sie eine Uhrzeit.", err_guests: (n) => `Catering ist ab ${n} Personen möglich.`, err_rating: "Bitte wählen Sie die Sterne.",
@@ -74,7 +74,7 @@
     en: {
       skip: "Skip to the menu", nav: "Main navigation", nav_menu: "Menu", nav_story: "Our story", nav_gallery: "Gallery", nav_reviews: "Reviews", nav_visit: "Visit us",
       language: "Language", book_table: "Book a table", kitchens: "Our kitchens", orbit_hint: "Tap a kitchen to see its menu.",
-      menu_title: "Our kitchens", menu_sub: "All our kitchens under one roof. Pick one to see its full menu.", see_menu: "See the menu", see_packages: "See packages",
+      menu_title: "Our kitchens", menu_sub: "Pick a kitchen to see its menu.", zoom_hint: "Double-tap to zoom", see_menu: "See the menu", see_packages: "See packages",
       story_title: "From a Damascus courtyard to Vienna", gallery_title: "Gallery", g_all: "All", g_food: "Food", g_place: "Restaurant", g_events: "Events",
       prev: "Previous", next: "Next", close: "Close", categories: "Categories", legal: "Legal",
       reviews_title: "What our guests say", reviews_empty: "No reviews yet. Be the first to write one.", write_review: "Write a review", google_review: "Review us on Google",
@@ -82,10 +82,10 @@
       review_consent: "I agree that my first name and review are published on this website.", review_send: "Send review", review_thanks: "Thank you! Your review appears once it has been checked.",
       reviews_on_site: (n) => n === 1 ? "1 review on our website" : `${n} reviews on our website`,
       on_google: (r, n) => `${r} on Google` + (n ? ` (${n} reviews)` : ""), restaurant_reply: "Reply from the restaurant:",
-      book_title: "Book a table", book_sub: "Fill in the form. WhatsApp opens with your request; you just tap send.", book_send: "Send request on WhatsApp",
+      book_title: "Book a table", book_sub: "Pick guests, day and time. WhatsApp opens with your request.", book_send: "Send request on WhatsApp",
       f_name: "Name", f_guests: "Guests", f_date: "Date", f_time: "Time", f_occasion: "Occasion", f_notes: "Requests (optional)",
       f_event: "Type of event", f_package: "Package", f_pickup: "Pick-up", any_package: "Not sure yet",
-      hours_title: "Opening hours", find_us: "Find us", call: "Call", whatsapp: "WhatsApp", route: "Get directions", email: "Email", copy_email: "Copy email", copied: "Copied",
+      hours_title: "Opening hours", find_us: "Find us", call: "Call", whatsapp: "WhatsApp", route: "Directions", email: "Email", copy_email: "Copy email", copied: "Copied",
       open_until: (t) => `Open now until ${t}`, closed_opens: (d, t) => `Closed – opens ${d} at ${t}`, closed: "Closed now", today: "today", tomorrow: "tomorrow",
       closed_day: "Closed", no_slots: "No times are available on this day. Please pick another day.", guests_n: (n) => n === 1 ? "1 guest" : `${n} guests`,
       err_name: "Please enter your name.", err_date: "Please pick a date.", err_time: "Please pick a time.", err_guests: (n) => `Catering starts at ${n} guests.`, err_rating: "Please choose the stars.",
@@ -115,6 +115,11 @@
     grill: '<path d="M4 9h16l-2 7H6z"/><path d="M8 16l-2 5M16 16l2 5M9 4c1 1 1 2 0 3M13 4c1 1 1 2 0 3"/>',
     cup: '<path d="M5 9h11v5a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5z"/><path d="M16 11h1.5a2.5 2.5 0 0 1 0 5H16M9 3c1 1 1 2 0 3M12.5 3c1 1 1 2 0 3"/>',
     leaf: '<path d="M5 19C5 10 11 5 20 4c0 9-5 15-14 15"/><path d="M5 19l8-8"/>',
+    calendar: '<rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4M8 14h2M14 14h2M8 17h2"/>',
+    chat: '<path d="M4 19l1.3-3.6A8 8 0 1 1 8.4 19z"/><path d="M9 10.5c.5 2 2.5 4 4.5 4.5"/>',
+    phone: '<path d="M5 4h3.5l1.5 4-2 1.5a11 11 0 0 0 6.5 6.5l1.5-2 4 1.5V19a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/>',
+    pin: '<path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/>',
+    mail: '<rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/>',
     sweet: '<path d="M4 14h16l-1.5 6h-13z"/><path d="M5 14c0-4 3-7 7-7s7 3 7 7"/><path d="M12 7V4"/>'
   };
   const SOCIAL = {
@@ -276,14 +281,16 @@
     requestAnimationFrame(orbitLoop);
   }
 
+  function tile(icon, label, attrs = {}) {
+    const tag = attrs.href ? "a" : "button";
+    const el = h(tag, { class: "tile", ...(tag === "button" ? { type: "button" } : {}), ...attrs },
+      h("span", { class: "tile-ic" }, svgIcon(ICON[icon] || ICON.star)), h("span", { class: "tile-lbl", text: label }));
+    return h("li", {}, el);
+  }
   function renderKitchens() {
-    $("#kitchenList").replaceChildren(...site.kitchens.map((k) => h("li", {},
-      h("button", { type: "button", class: "k-card", onclick: () => openKitchen(k.id) },
-        h("img", { src: k.img || "/logo.svg", alt: "", width: 400, height: 400, loading: "lazy", decoding: "async" }),
-        h("span", { class: "k-txt" },
-          h("h3", { text: tx(k.name) }),
-          h("p", { text: tx(k.desc) }),
-          h("span", { class: "k-more", text: k.type === "catering" ? t("see_packages") : t("see_menu") }))))));
+    $("#kitchenList").replaceChildren(
+      ...site.kitchens.map((k) => tile(k.icon, tx(k.short) || tx(k.name), { onclick: () => openKitchen(k.id), "aria-label": tx(k.name) })),
+      site.booking.enabled ? tile("calendar", t("book_table"), { href: "#book", class: "tile tile-gold" }) : null);
   }
 
   /* ------------------------------------------------------------ menu sheet */
@@ -347,7 +354,8 @@
     }
     if (tags.childElementCount) txt.append(tags);
     const row = h("article", { class: "m-item" + (it.img ? "" : " no-img") + (it.soldOut ? " sold-out" : "") });
-    if (it.img) row.append(h("img", { src: it.img, alt: "", width: 84, height: 84, loading: "lazy", decoding: "async" }));
+    if (it.img) row.append(h("button", { type: "button", class: "m-photo", "aria-label": tx(it.name), onclick: () => openPhotos([{ img: it.img, alt: it.name }], 0) },
+      h("img", { src: it.img, alt: "", width: 84, height: 84, loading: "lazy", decoding: "async" })));
     row.append(txt);
     return row;
   }
@@ -385,21 +393,37 @@
   const msgL = () => MSG[site.messageLang] || MSG.ar;
   const line = (label, v) => (v ? `${label}: ${v}` : "");
 
-  /* ------------------------------------------------------------ booking */
+  /* ------------------------------------------------------------ booking (card with chips) */
+  const book = { guests: 2, date: "", time: "", occasion: "" };
+  function chip(label, sub, active, onclick, disabled = false) {
+    return h("button", { type: "button", role: "radio", class: "chip", "aria-checked": String(active), disabled: disabled || null, onclick },
+      h("b", { text: label }), sub ? h("small", { text: sub }) : null);
+  }
   function renderBookingForm() {
     const f = $("#bookForm"); if (!f) return;
     const b = site.booking;
     $("#book").hidden = !b.enabled;
-    const guests = f.guests, keep = guests.value || "2";
-    guests.replaceChildren(...Array.from({ length: b.maxGuests }, (_, i) => h("option", { value: i + 1, text: t("guests_n", i + 1) })));
-    guests.value = Math.min(Number(keep), b.maxGuests);
-    const occ = f.occasion, keepOcc = occ.value;
-    occ.replaceChildren(h("option", { value: "", text: "—" }), ...b.occasions.map((o, i) => h("option", { value: i, text: tx(o) })));
-    occ.value = keepOcc;
+    book.guests = Math.min(Math.max(1, book.guests), b.maxGuests);
+    $("#gOut").textContent = t("guests_n", book.guests);
+    $("#gMinus").disabled = book.guests <= 1; $("#gPlus").disabled = book.guests >= b.maxGuests;
+    // days: today + the next two weeks (closed days are shown but cannot be picked)
     const today = viennaNow().date;
-    f.date.min = today; f.date.max = addDays(today, b.daysAhead);
-    if (!f.date.value) f.date.value = today;
-    fillTimes();
+    const days = Array.from({ length: Math.min(14, b.daysAhead + 1) }, (_, i) => addDays(today, i));
+    if (!book.date || !days.includes(book.date) || !slotsFor(book.date).length) book.date = days.find((d) => slotsFor(d).length) || today;
+    const dayFmt = new Intl.DateTimeFormat(locale(), { day: "numeric", month: "short", timeZone: "UTC" });
+    $("#dayChips").replaceChildren(...days.map((d, i) => {
+      const open = slotsFor(d).length > 0;
+      const name = i === 0 ? t("today") : i === 1 ? t("tomorrow") : t("days")[wdOf(d)];
+      return chip(name, open ? dayFmt.format(new Date(d + "T12:00:00Z")) : t("closed_day"), d === book.date, () => { book.date = d; book.time = ""; renderBookingForm(); }, !open);
+    }));
+    const slots = slotsFor(book.date);
+    if (!slots.includes(book.time)) book.time = "";
+    $("#noSlots").hidden = slots.length > 0;
+    $("#timeChips").replaceChildren(...slots.map((s) => chip(s, null, s === book.time, () => { book.time = s; renderBookingForm(); })));
+    $("#occBlock").hidden = !b.occasions.length;
+    $("#occChips").replaceChildren(...b.occasions.map((o, i) => chip(tx(o), null, book.occasion === String(i), () => { book.occasion = book.occasion === String(i) ? "" : String(i); renderBookingForm(); })));
+    const parts = [t("guests_n", book.guests), book.date ? fmtDate(book.date) : "", book.time];
+    $("#bookSummary").textContent = parts.filter(Boolean).join(" · ");
     $("#bookNote").textContent = tx(b.note);
   }
   function slotsFor(iso, minAhead = 30) {
@@ -412,13 +436,6 @@
     });
     return out;
   }
-  function fillTimes() {
-    const f = $("#bookForm"), keep = f.time.value;
-    const slots = f.date.value ? slotsFor(f.date.value) : [];
-    f.time.replaceChildren(...(slots.length ? slots.map((s) => h("option", { value: s, text: s })) : [h("option", { value: "", text: t("closed_day") })]));
-    if (slots.includes(keep)) f.time.value = keep;
-    return slots.length;
-  }
   function showErr(id, msg, field) {
     const el = $(id); el.textContent = msg; el.hidden = !msg;
     $$("[aria-invalid]", el.closest("form")).forEach((x) => x.removeAttribute("aria-invalid"));
@@ -426,18 +443,18 @@
   }
   function setupBooking() {
     const f = $("#bookForm");
-    f.date.addEventListener("change", () => { if (!fillTimes()) showErr("#bookErr", t("no_slots"), f.date); else showErr("#bookErr", ""); });
+    $("#gMinus").addEventListener("click", () => { book.guests -= 1; renderBookingForm(); });
+    $("#gPlus").addEventListener("click", () => { book.guests += 1; renderBookingForm(); });
     f.addEventListener("submit", (e) => {
       e.preventDefault();
+      if (!book.time) { showErr("#bookErr", t("err_time")); $("#timeChips").scrollIntoView({ block: "center", behavior: "smooth" }); return; }
       const name = f.name.value.trim();
       if (name.length < 2) return showErr("#bookErr", t("err_name"), f.name);
-      if (!f.date.value) return showErr("#bookErr", t("err_date"), f.date);
-      if (!f.time.value) return showErr("#bookErr", t("no_slots"), f.date);
       showErr("#bookErr", "");
       const L = msgL(), ml = site.messageLang;
-      const occ = f.occasion.value !== "" ? txIn(site.booking.occasions[Number(f.occasion.value)], ml) : "";
-      openWhatsApp([`*${L.book}* – ${site.name}`, "", line(L.name, name), line(L.guests, f.guests.value), line(L.date, fmtDate(f.date.value, ml)), line(L.time, f.time.value),
-        line(L.occasion, occ), line(L.notes, f.notes.value.trim()), line(L.lang, LANG_NAME[lang]), "", `(${L.via})`], "book", { guests: Number(f.guests.value) });
+      const occ = book.occasion !== "" ? txIn(site.booking.occasions[Number(book.occasion)], ml) : "";
+      openWhatsApp([`*${L.book}* – ${site.name}`, "", line(L.name, name), line(L.guests, book.guests), line(L.date, fmtDate(book.date, ml)), line(L.time, book.time),
+        line(L.occasion, occ), line(L.notes, f.notes.value.trim()), line(L.lang, LANG_NAME[lang]), "", `(${L.via})`], "book", { guests: book.guests });
     });
   }
 
@@ -580,35 +597,82 @@
       setTimeout(() => (strip.dataset.moved = "0"), 50);
     });
   }
-  let lbIndex = 0;
-  function openLightbox(g) {
-    const list = visibleGallery();
-    lbIndex = Math.max(0, list.indexOf(g));
-    showLightbox(list[lbIndex], false);
+  /* viewer with zoom: double-tap / double-click toggles 2.5×, drag to move, pinch on phones */
+  let lbList = [], lbIndex = 0;
+  const zoom = { s: 1, x: 0, y: 0 };
+  function applyZoom(animate = true) {
+    const img = $("#lbImg");
+    img.style.transition = animate && !reduceMotion.matches ? "transform .25s var(--ease)" : "none";
+    img.style.transform = zoom.s === 1 ? "" : `translate(${zoom.x}px, ${zoom.y}px) scale(${zoom.s})`;
+    $("#lbZoom").classList.toggle("zoomed", zoom.s > 1);
+  }
+  function clampZoom() {
+    const r = $("#lbImg").getBoundingClientRect(), w = r.width / zoom.s, hgt = r.height / zoom.s;
+    const mx = (w * zoom.s - w) / 2, my = (hgt * zoom.s - hgt) / 2;
+    zoom.x = Math.max(-mx, Math.min(mx, zoom.x)); zoom.y = Math.max(-my, Math.min(my, zoom.y));
+  }
+  function resetZoom() { zoom.s = 1; zoom.x = zoom.y = 0; applyZoom(false); }
+  function toggleZoom(cx, cy) {
+    if (zoom.s > 1) { resetZoom(); return; }
+    const r = $("#lbImg").getBoundingClientRect();
+    zoom.s = 2.5;
+    zoom.x = (r.left + r.width / 2 - cx) * (zoom.s - 1);
+    zoom.y = (r.top + r.height / 2 - cy) * (zoom.s - 1);
+    clampZoom(); applyZoom();
+  }
+  function openPhotos(list, index) {
+    lbList = list; lbIndex = Math.max(0, index);
+    showLightbox(lbList[lbIndex], false);
+    $("#lbPrev").hidden = $("#lbNext").hidden = list.length < 2;
     openSheet($("#lightbox"), "photo");
   }
+  function openLightbox(g) { const list = visibleGallery(); openPhotos(list, list.indexOf(g)); }
   function showLightbox(g, animate = true) {
     const img = $("#lbImg");
+    resetZoom();
     const swap = () => { img.src = g.img; img.alt = tx(g.alt); $("#lbCap").textContent = tx(g.alt); img.classList.remove("swap"); };
     if (animate && !reduceMotion.matches) { img.classList.add("swap"); setTimeout(swap, 180); } else swap();
   }
   function stepLightbox(d) {
-    const list = visibleGallery(); if (!list.length) return;
-    lbIndex = (lbIndex + d + list.length) % list.length;
-    showLightbox(list[lbIndex]);
+    if (lbList.length < 2) return;
+    lbIndex = (lbIndex + d + lbList.length) % lbList.length;
+    showLightbox(lbList[lbIndex]);
   }
   function setupLightbox() {
-    const lb = $("#lightbox"), rtl = () => (document.documentElement.dir === "rtl" ? -1 : 1);
+    const lb = $("#lightbox"), box = $("#lbZoom"), rtl = () => (document.documentElement.dir === "rtl" ? -1 : 1);
     $("#lbPrev").addEventListener("click", (e) => { e.stopPropagation(); stepLightbox(-1); });
     $("#lbNext").addEventListener("click", (e) => { e.stopPropagation(); stepLightbox(1); });
     lb.addEventListener("keydown", (e) => { if (e.key === "ArrowRight") stepLightbox(rtl()); if (e.key === "ArrowLeft") stepLightbox(-rtl()); });
-    let x0 = null;
-    lb.addEventListener("touchstart", (e) => { x0 = e.touches[0].clientX; }, { passive: true });
-    lb.addEventListener("touchend", (e) => {
-      if (x0 == null) return;
-      const dx = e.changedTouches[0].clientX - x0; x0 = null;
-      if (Math.abs(dx) > 50) stepLightbox(dx < 0 ? rtl() : -rtl());
+    lb.addEventListener("close", resetZoom);
+    box.addEventListener("dblclick", (e) => { e.preventDefault(); toggleZoom(e.clientX, e.clientY); });
+    box.addEventListener("click", (e) => e.stopPropagation());
+    // touch: double-tap, pinch, drag when zoomed, swipe to change photo when not zoomed
+    const pts = new Map(); let lastTap = 0, start = null, pinch0 = 0, s0 = 1, moved = false;
+    box.addEventListener("pointerdown", (e) => {
+      box.setPointerCapture(e.pointerId); pts.set(e.pointerId, { x: e.clientX, y: e.clientY }); moved = false;
+      start = { x: e.clientX, y: e.clientY, zx: zoom.x, zy: zoom.y };
+      if (pts.size === 2) { const [a, b] = [...pts.values()]; pinch0 = Math.hypot(a.x - b.x, a.y - b.y); s0 = zoom.s; }
     });
+    box.addEventListener("pointermove", (e) => {
+      if (!pts.has(e.pointerId)) return;
+      pts.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      if (pts.size === 2) { const [a, b] = [...pts.values()]; zoom.s = Math.min(4, Math.max(1, s0 * Math.hypot(a.x - b.x, a.y - b.y) / pinch0)); clampZoom(); applyZoom(false); moved = true; return; }
+      const dx = e.clientX - start.x, dy = e.clientY - start.y;
+      if (Math.abs(dx) + Math.abs(dy) > 6) moved = true;
+      if (zoom.s > 1) { zoom.x = start.zx + dx; zoom.y = start.zy + dy; clampZoom(); applyZoom(false); }
+    });
+    const end = (e) => {
+      if (!pts.has(e.pointerId)) return;
+      pts.delete(e.pointerId);
+      if (pts.size) return;
+      const dx = e.clientX - start.x;
+      if (zoom.s <= 1.02) { resetZoom(); if (Math.abs(dx) > 50) { stepLightbox(dx < 0 ? rtl() : -rtl()); return; } }
+      if (!moved && e.pointerType !== "mouse") {
+        const now = Date.now();
+        if (now - lastTap < 300) { toggleZoom(e.clientX, e.clientY); lastTap = 0; } else lastTap = now;
+      }
+    };
+    box.addEventListener("pointerup", end); box.addEventListener("pointercancel", end);
   }
 
   /* ------------------------------------------------------------ reviews */
@@ -676,15 +740,15 @@
     $("#address").textContent = site.address;
     const mapQ = site.mapsQuery || site.address;
     const c = $("#contact"); c.replaceChildren();
-    if (site.phone) c.append(h("a", { class: "btn line", href: "tel:" + site.phone.replace(/[^\d+]/g, ""), text: t("call"), onclick: () => track("call") }));
-    if (site.whatsapp) c.append(h("a", { class: "btn line", href: "https://wa.me/" + site.whatsapp, target: "_blank", rel: "noopener", text: t("whatsapp"), onclick: () => track("chat") }));
-    if (mapQ) c.append(h("a", { class: "btn line", href: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(mapQ), target: "_blank", rel: "noopener", text: t("route"), onclick: () => track("map") }));
+    if (site.whatsapp) c.append(tile("chat", t("whatsapp"), { href: "https://wa.me/" + site.whatsapp, target: "_blank", rel: "noopener", onclick: () => track("chat") }));
+    if (site.phone) c.append(tile("phone", t("call"), { href: "tel:" + site.phone.replace(/[^\d+]/g, ""), onclick: () => track("call") }));
+    if (mapQ) c.append(tile("pin", t("route"), { href: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(mapQ), target: "_blank", rel: "noopener", onclick: () => track("map") }));
     if (site.email) {
-      // mailto often does nothing on computers without a mail app, so copying is offered as well
-      c.append(h("a", { class: "btn line", href: "mailto:" + site.email, text: t("email") }));
-      c.append(h("button", { type: "button", class: "btn line", text: t("copy_email"), onclick: async () => { try { await navigator.clipboard.writeText(site.email); toast(t("copied")); } catch { toast(site.email); } } }));
+      // mailto often does nothing on computers without a mail app, so a tap also copies the address
+      c.append(tile("mail", t("email"), { href: "mailto:" + site.email, onclick: async () => { try { await navigator.clipboard.writeText(site.email); toast(t("copied") + ": " + site.email); } catch { toast(site.email); } } }));
     }
-    $("#findUs").hidden = !site.address && !c.childElementCount;
+    c.hidden = !c.childElementCount;
+    $("#findUs").hidden = !site.address;
     const so = $("#social"); so.replaceChildren();
     Object.entries(site.social || {}).forEach(([k, u]) => { if (u && SOCIAL[k]) so.append(h("li", {}, h("a", { href: u, target: "_blank", rel: "noopener", "aria-label": k[0].toUpperCase() + k.slice(1) }, svgIcon(SOCIAL[k])))); });
   }
